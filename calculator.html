@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./calulator.css" />
+    <script src="./calculator.js"></script>
+  </head>
+  <body>
+    <form name="calform">
+      <main>
+        <div>Calculator</div>
+        <div>
+          <input type="checkbox" name="log" checked id="log" />
+          <label for="log">Show Date</label>
+        </div>
+        <div>
+          <input type="text" name="num1" size="5" />
+          <select name="opr">
+            <option>+</option>
+            <option>-</option>
+            <option>*</option>
+            <option>/</option>
+          </select>
+          <input type="text" name="num2" size="5" />
+        </div>
+        <div>
+          <button type="button" onclick="calculate()">Calculate</button>
+          <button type="button" onclick="showHistory()">History</button>
+        </div>
+        <div>
+          <textarea name="display" cols="45" rows="6" readonly></textarea>
+        </div>
+      </main>
+    </form>
+  </body>
+</html>
